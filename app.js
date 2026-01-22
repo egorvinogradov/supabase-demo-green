@@ -9,7 +9,7 @@ const FIELD_OPTIONS = {
 const connectionStatus = document.getElementById("connection-status");
 const updateForm = document.getElementById("update-form");
 const updateTarget = document.getElementById("update-target");
-const updateRecord = document.getElementById("update-record");
+const updateRecordSelect = document.getElementById("update-record");
 const updateField = document.getElementById("update-field");
 const updateValue = document.getElementById("update-value");
 const updateStatus = document.getElementById("update-status");
@@ -161,7 +161,7 @@ const populateUpdateForm = ({ leads, contacts, contactMethods }) => {
   if (options.length === 0) {
     options = [{ value: "", label: "No records available" }];
   }
-  setSelectOptions(updateRecord, options);
+  setSelectOptions(updateRecordSelect, options);
   setSelectOptions(
     updateField,
     FIELD_OPTIONS[target].map((field) => ({
@@ -181,7 +181,7 @@ updateForm.addEventListener("submit", async (event) => {
   updateStatus.classList.remove("error");
 
   const target = updateTarget.value;
-  const uuid = updateRecord.value;
+  const uuid = updateRecordSelect.value;
   const field = updateField.value;
   const value = updateValue.value.trim();
 
