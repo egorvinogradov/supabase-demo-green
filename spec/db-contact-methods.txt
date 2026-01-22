@@ -1,0 +1,40 @@
+// ✅ scheme done
+// ✅ enum moved
+
+// id не нужен
+
+created_at
+  iso timestamp
+
+updated_at
+  iso timestamp
+
+deleted_at
+  iso timestamp
+
+uuid
+  uuid
+
+type
+  enum
+
+email
+  string
+
+phone
+  string
+
+phone_ext
+  string
+
+status
+  enum
+
+last_activity_at
+  iso timestamp
+
+comment
+  string
+
+data_source
+  uuid

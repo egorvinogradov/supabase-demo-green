@@ -1,0 +1,142 @@
+// ✅ scheme done
+// ✅ enum moved
+// ❌ data_sources
+
+// id не нужен
+
+uuid
+  uuid
+
+created_at
+  iso timestamp
+
+updated_at
+  iso timestamp
+
+deleted_at
+  iso timestamp
+
+assigned_user_uuid
+  uuid
+
+condition
+  enum
+    pending
+    qualified
+    disqualified
+
+status
+  enum
+    new
+    contact
+    discovery
+    demo
+    proposal
+    negotiating
+    closed
+
+substatus
+  enum
+
+name
+  string
+
+names_alt
+  string[]
+
+delivery_per_day
+  enum
+
+delivery_available
+  enum
+
+delivery_own_drivers
+  enum
+
+delivery_vendors
+  enum[]
+
+accreditations
+  enum[]
+
+urac_programs
+  enum[]
+
+achc_programs
+  enum[]
+
+address_street
+  string
+
+address_house_number
+  string
+
+address_house
+  string
+
+address_unit
+  string
+
+address_po_box
+  string
+
+address_city
+  string
+
+address_county
+  string
+
+address_state_code
+  string
+
+address_zip
+  string
+
+pharmacy_types
+  enum[]
+
+pharmacy_pms
+  enum
+
+pharmacy_networks
+  enum[]
+
+pharmacy_revenue
+  enum
+
+pharmacy_staff
+  enum
+
+pharmacy_founded_at
+  iso timestamp
+
+websites
+  string[]
+
+google_maps_place_id
+  string
+
+linkedin
+  string
+
+npi_id
+  string
+
+ncpdp_id
+  string
+
+contacts
+  uuid[]
+
+notes
+  uuid[]
+
+parent_lead_uuid
+  uuid
+
+child_lead_uuids
+  uuid[]
+
+data_sources
+  jsonb
+    ⚠️

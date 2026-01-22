@@ -1,0 +1,32 @@
+// ✅ scheme done
+// ✅ enum moved
+
+// id не нужен
+
+created_at
+  iso timestamp
+
+updated_at
+  iso timestamp
+
+deleted_at
+  iso timestamp
+
+uuid
+  uuid
+
+first_name
+  string
+
+last_name
+  string
+
+role
+  enum
+    sales_representative
+
+email
+  string
+
+password_hash
+  string

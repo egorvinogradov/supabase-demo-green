@@ -1,0 +1,51 @@
+// ✅ scheme done
+// ✅ enum moved
+// id не нужен
+
+created_at
+  iso timestamp
+
+updated_at
+  iso timestamp
+
+deleted_at
+  iso timestamp
+
+uuid
+  uuid
+
+first_name
+  string
+
+middle_name
+  string
+
+last_name
+  string
+
+job_title_raw
+  string
+
+credential_raw
+  string
+
+is_general_contact_info
+  boolean
+
+label
+  enum
+
+comment
+  string
+
+comment_updated_at
+  iso timestamp
+
+note_uuids
+  uuid[]
+
+parent_lead_uuids
+  uuid[]
+
+contact_method_uuids
+  uuid[]
